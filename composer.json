@@ -1,5 +1,5 @@
 {
-  "name": "Blast facades",
+  "name": "blast/facades",
   "description": "Minimize complexity and represent dependencies as generic facades.",
   "keywords": [
     "blast",
