@@ -1,6 +1,6 @@
 {
   "name": "Blast facades",
-  "description": "Represent your dependency as generic facade.",
+  "description": "Minimize complexity and represent dependencies as generic facades.",
   "keywords": [
     "blast",
     "facades",
@@ -41,5 +41,11 @@
       "cd vendor/phpunit/phpunit",
       "phpunit --configuration phpunit.xml"
     ]
+  },
+
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0"
+    }
   }
 }

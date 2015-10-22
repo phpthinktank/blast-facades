@@ -6,10 +6,10 @@
  * Time: 16:14
  */
 
-namespace Blast\Tests\Mocks\Facades;
+namespace Blast\Tests\Stubs\Facades;
 
 use Blast\Facades\AbstractFacade;
-use Blast\Tests\Mocks\FooInterface;
+use Blast\Tests\Stubs\FooInterface;
 
 class Foo extends AbstractFacade
 {

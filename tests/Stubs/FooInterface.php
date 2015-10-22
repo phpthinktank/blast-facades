@@ -7,7 +7,7 @@
  * Time: 16:11
  */
 
-namespace Blast\Tests\Mocks;
+namespace Blast\Tests\Stubs;
 
 interface FooInterface
 {

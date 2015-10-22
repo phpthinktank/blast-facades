@@ -6,7 +6,7 @@
  * Time: 16:13
  */
 
-namespace Blast\Tests\Mocks;
+namespace Blast\Tests\Stubs;
 
 
 class Foo implements FooInterface
@@ -17,6 +17,6 @@ class Foo implements FooInterface
      */
     public function bar()
     {
-        return [];
+        return 'baz';
     }
 }
