@@ -1,0 +1,45 @@
+{
+  "name": "Blast facades",
+  "description": "Represent your dependency as generic facade.",
+  "keywords": [
+    "blast",
+    "facades",
+    "dependency",
+    "injection",
+    "di"
+  ],
+  "homepage": "https://github.com/thephpleague/container",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marco Bunge",
+      "email": "mjls@web.de",
+      "homepage": "http://www.marco-bunge.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "container-interop/container-interop": "^1.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.8.*",
+    "league/container": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Blast\\Facades\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Blast\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": [
+      "cd vendor/phpunit/phpunit",
+      "phpunit --configuration phpunit.xml"
+    ]
+  }
+}
