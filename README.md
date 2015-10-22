@@ -3,8 +3,6 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 Blast facades is aiming to minimize complexity and represent dependencies as generic facades. This package is part of Blast component collection.
@@ -219,13 +217,11 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [ico-version]: https://img.shields.io/packagist/v/blast/facades.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/thephpblast/facades/master.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/phpthinktank/blast-facades/master.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/blast/facades.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/blast/facades
-[link-travis]: https://travis-ci.org/thephpblast/facades
-[link-scrutinizer]: https://scrutinizer-ci.com/g/thephpblast/facades/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/thephpblast/facades
+[link-travis]: https://travis-ci.org/phpthinktank/blast-facades
 [link-downloads]: https://packagist.org/packages/blast/facades
 [link-author]: https://github.com/mbunge
 [link-contributors]: ../../contributors
