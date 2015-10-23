@@ -4,6 +4,7 @@
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
 [![Total Downloads][ico-downloads]][link-downloads]
+[![Coverage Status](https://img.shields.io/coveralls/phpthinktank/blast-facades/master.svg?style=flat-square)](https://coveralls.io/github/phpthinktank/blast-facades?branch=1.0.x-dev)
 
 Blast facades is aiming to minimize complexity and represent dependencies as generic facades. This package is part of Blast component collection.
 
