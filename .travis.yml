@@ -1,5 +1,4 @@
 language: php
-
     - 5.5
     - 5.6
     - 7.0
@@ -21,7 +20,8 @@ install:
     - travis_retry composer install --no-interaction --prefer-dist
 
 script:
-    - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
+    - bash -c 'if ( [ "$TRAVIS_PHP_VERSION" == "hhvm" ] || [ "$TRAVIS_PHP_VERSION" == "7.0" ] ); then vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover; fi;'
+    - bash -c 'if ( [ "$TRAVIS_PHP_VERSION" == "hhvm" ] || [ "$TRAVIS_PHP_VERSION" == "7.0" ] ); then vendor/bin/phpcs ./src --colors --encoding=UTF-8 --extensions=php --standard=PSR2; fi;'
 
 after_success:
     - coveralls

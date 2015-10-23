@@ -20,7 +20,8 @@
   ],
   "require": {
     "php": ">=5.5.0",
-    "container-interop/container-interop": "^1.1"
+    "container-interop/container-interop": "^1.1",
+    "squizlabs/php_codesniffer": "2.*"
   },
   "require-dev": {
     "phpunit/phpunit": "4.8.*",
@@ -40,6 +41,10 @@
     "test": [
       "cd vendor/phpunit/phpunit",
       "phpunit --configuration phpunit.xml"
+    ],
+    "phpcs": [
+      "cd vendor/squizlabs/php_codesniffer/scripts",
+      "phpcs ./src --colors --encoding=UTF-8 --extensions=php --standard=PSR2"
     ]
   },
 
