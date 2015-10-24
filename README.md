@@ -22,7 +22,7 @@ $ composer require blast/facades
 
 ### Initialize
 
-First of all we need to tell FacadeFactory which container instance should be used. We could use [http://container.thephpleague.com/](thephpleague/container) for example:
+First of all we need to tell FacadeFactory which container instance should be used. We could use [thephpleague/container](http://container.thephpleague.com/) for example:
 
 A bootstrap is looking like this:
 
