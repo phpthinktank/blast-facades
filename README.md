@@ -189,6 +189,12 @@ $container->add('Acme\Service', 'Acme\Service\AnotherService');
 $service = Service::__instance();
 ```
 
+## Supporting projects
+
+### Projects using `ContainerInterface`
+
+- [blast-config](https://github.com/phpthinktank/blast-config): 
+
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
@@ -211,6 +217,11 @@ If you discover any security related issues, please email :author_email instead 
 
 - [Marco Bunge][link-author]
 - [All contributors][link-contributors]
+
+### Special thanks
+
+- [David Négrier](https://github.com/moufmouf)
+- [jamesdb](https://github.com/jamesdb)
 
 ## License
 
