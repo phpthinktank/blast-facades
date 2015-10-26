@@ -78,7 +78,7 @@ $container->get('Acme\Service\SomeService');
 
 ```
 
-for more information please read league/container (http://container.thephpleague.com/getting-started/)[documentation]
+for more information please read league/container [documentation](http://container.thephpleague.com/getting-started/)
 
 ### Creating and using a facade
 
