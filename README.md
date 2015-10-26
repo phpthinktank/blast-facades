@@ -8,7 +8,7 @@
 
 Blast facades is aiming to minimize complexity and represent dependencies as generic facades. This package is part of Blast component collection.
 
-This package is supporting interopt-container and all container packages which are using interopt-container.
+This package is supporting [container-interop](https://github.com/container-interop/container-interop/) and all container packages which are using container-interop.
 
 ## Install
 
@@ -84,7 +84,7 @@ for more information please read league/container (http://container.thephpleague
 
 A Facade should be an instance of AbstractFacade and should provide an accessor. 
 
-The accessor is equal to the service id and will passed to Interop\Container\ContainerInterface::get('id').
+The accessor is the service identifier. It will be used to fetch the service in the container (via `Interop\Container\ContainerInterface::get($accessor)`.
 
 ```php
 <?php
@@ -185,7 +185,7 @@ $service = Service::__instance();
 //replace a service with another one
 $container->add('Acme\Service', 'Acme\Service\AnotherService');
 
-//is now returning the service instance Acme\Service\SomeService
+//is now returning the service instance Acme\Service\AnotherService
 $service = Service::__instance();
 ```
 
