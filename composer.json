@@ -1,6 +1,6 @@
 {
   "name": "blast/facades",
-  "description": "Minimize complexity and represent dependencies as generic facades.",
+  "description": "Minimize complexity and represent dependencies as facades.",
   "keywords": [
     "blast",
     "facades",
@@ -8,7 +8,7 @@
     "injection",
     "di"
   ],
-  "homepage": "https://github.com/thephpleague/container",
+  "homepage": "https://github.com/phpthinktank/blast-facades",
   "license": "MIT",
   "authors": [
     {
