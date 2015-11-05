@@ -20,12 +20,15 @@
   ],
   "require": {
     "php": ">=5.5.0",
-    "container-interop/container-interop": "^1.1",
-    "squizlabs/php_codesniffer": "2.*"
+    "container-interop/container-interop": "^1.1"
   },
   "require-dev": {
     "phpunit/phpunit": "4.8.*",
-    "league/container": "~2.0"
+    "league/container": "~2.0",
+    "squizlabs/php_codesniffer": "2.*"
+  },
+  "provide": {
+    "container-interop/container-interop-implementation": "^1.1"
   },
   "autoload": {
     "psr-4": {
@@ -47,7 +50,9 @@
       "phpcs ./src --colors --encoding=UTF-8 --extensions=php --standard=PSR2"
     ]
   },
-
+  "suggest": {
+    "league/container": "Recommended container-interop implementation"
+  },
   "extra": {
     "branch-alias": {
       "dev-master": "1.0.x-dev"

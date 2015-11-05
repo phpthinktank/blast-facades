@@ -8,7 +8,14 @@
 
 Blast facades is aiming to minimize complexity and represent dependencies as generic facades. This package is part of Blast component collection.
 
-This package is supporting interopt-container and all container packages which are using interopt-container.
+This package is compliant with [PSR-1], [PSR-2] and [PSR-4]. If you notice compliance oversights,
+please send a patch via pull request.
+
+[PSR-1]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md
+[PSR-2]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
+[PSR-4]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md
+
+This package is also supporting [container-interop (PSR-11)](https://github.com/container-interop/container-interop/) and all container packages which are using container-interop.
 
 ## Install
 
@@ -78,13 +85,13 @@ $container->get('Acme\Service\SomeService');
 
 ```
 
-for more information please read league/container (http://container.thephpleague.com/getting-started/)[documentation]
+for more information please read league/container [documentation](http://container.thephpleague.com/getting-started/)
 
 ### Creating and using a facade
 
 A Facade should be an instance of AbstractFacade and should provide an accessor. 
 
-The accessor is equal to the service id and will passed to Interop\Container\ContainerInterface::get('id').
+The accessor is the service identifier. It will be used to fetch the service in the container (via `Interop\Container\ContainerInterface::get($accessor)`.
 
 ```php
 <?php
@@ -185,9 +192,15 @@ $service = Service::__instance();
 //replace a service with another one
 $container->add('Acme\Service', 'Acme\Service\AnotherService');
 
-//is now returning the service instance Acme\Service\SomeService
+//is now returning the service instance Acme\Service\AnotherService
 $service = Service::__instance();
 ```
+
+## Supporting projects
+
+### Projects using `ContainerInterface`
+
+- [blast-config](https://github.com/phpthinktank/blast-config): 
 
 ## Change log
 
@@ -211,6 +224,11 @@ If you discover any security related issues, please email :author_email instead 
 
 - [Marco Bunge][link-author]
 - [All contributors][link-contributors]
+
+### Special thanks
+
+- [David Négrier](https://github.com/moufmouf)
+- [jamesdb](https://github.com/jamesdb)
 
 ## License
 
