@@ -28,7 +28,7 @@
     "squizlabs/php_codesniffer": "2.*"
   },
   "provide": {
-      "container-interop/container-interop-implementation": "^1.1"
+    "container-interop/container-interop-implementation": "^1.1"
   },
   "autoload": {
     "psr-4": {
